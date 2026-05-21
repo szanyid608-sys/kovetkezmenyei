@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Az első világháború következményei</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to bottom, #f5f5f5, #d6e4f0);
+            color:#222;
+            line-height:1.7;
+        }
+
+        header{
+            height:100vh;
+            background:
+                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('hatter.jpg') center/cover no-repeat;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        header h1{
+            font-size:4rem;
+            margin-bottom:20px;
+            text-shadow:3px 3px 10px black;
+        }
+
+        header p{
+            font-size:1.4rem;
+            max-width:800px;
+        }
+
+        nav{
+            background:#1f2937;
+            padding:15px;
+            position:sticky;
+            top:0;
+            z-index:1000;
+            box-shadow:0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            list-style:none;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd700;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        h2{
+            font-size:2.5rem;
+            margin-bottom:25px;
+            color:#8b0000;
+            border-left:8px solid #8b0000;
+            padding-left:15px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            margin-bottom:40px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.15);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .highlight{
+            background:linear-gradient(to right, #b30000, #ff4d4d);
+            color:white;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 5px 25px rgba(0,0,0,0.3);
+        }
+
+        .highlight h2{
+            color:white;
+            border-left:8px solid white;
+        }
+
+        .image-placeholder{
+            width:100%;
+            height:300px;
+            background:#ccc;
+            border:3px dashed #777;
+            border-radius:15px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-top:20px;
+            font-size:1.3rem;
+            color:#444;
+        }
+
+        footer{
+            background:#111827;
+            color:white;
+            text-align:center;
+            padding:30px;
+            margin-top:50px;
+        }
+
+        .quote{
+            font-style:italic;
+            background:#fff7cc;
+            border-left:8px solid #ffd700;
+            padding:20px;
+            margin-top:20px;
+            border-radius:10px;
+        }
+
+        @media(max-width:768px){
+
+            header h1{
+                font-size:2.5rem;
+            }
+
+            nav ul{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            section{
+                padding:50px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Az első világháború következményei</h1>
+            <p>
+                Az 1914 és 1918 között zajló világháború alapjaiban változtatta meg Európát és Magyarország történelmét.
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#europa">Európa</a></li>
+            <li><a href="#gazdasag">Gazdaság</a></li>
+            <li><a href="#magyarorszag">Magyarország</a></li>
+            <li><a href="#osszegzes">Összegzés</a></li>
+        </ul>
+    </nav>
+
+    <section id="europa">
+
+        <div class="card">
+            <h2>Európa átalakulása</h2>
+
+            <p>
+                Az első világháború után több birodalom is összeomlott:
+                az Osztrák–Magyar Monarchia, a Német Császárság,
+                az Orosz Birodalom és az Oszmán Birodalom.
+            </p>
+
+            <p>
+                Új országok jöttek létre, például Csehszlovákia és Jugoszlávia.
+                A békeszerződések új határokat rajzoltak Európában.
+            </p>
+
+            <div class="image-placeholder">
+                Ide szúrhatsz be egy képet Európa térképéről
+            </div>
+        </div>
+
+    </section>
+
+    <section id="gazdasag">
+
+        <div class="card">
+            <h2>Gazdasági és társadalmi következmények</h2>
+
+            <p>
+                A háború hatalmas pusztítást okozott.
+                Városok, gyárak és infrastruktúra semmisült meg.
+                Az országok súlyos adósságokba kerültek.
+            </p>
+
+            <p>
+                Több millió ember halt meg vagy sérült meg,
+                ezért a társadalom is jelentősen megváltozott.
+                Sok család elveszítette hozzátartozóit.
+            </p>
+
+            <div class="quote">
+                „A háború véget vetett a régi Európának, és egy új, bizonytalan korszakot indított el.”
+            </div>
+
+            <div class="image-placeholder">
+                Ide jöhet egy korabeli háborús fotó
+            </div>
+        </div>
+
+    </section>
+
+    <section id="magyarorszag">
+
+        <div class="highlight">
+
+            <h2>Magyarország és a trianoni béke</h2>
+
+            <p>
+                Magyarország számára az első világháború egyik legsúlyosabb következménye
+                a trianoni békeszerződés volt, amelyet 1920-ban írtak alá.
+            </p>
+
+            <p>
+                Az ország elveszítette területének körülbelül kétharmadát,
+                valamint lakosságának jelentős részét.
+                Sok magyar került az új határokon kívülre.
+            </p>
+
+            <p>
+                A gazdaság meggyengült, fontos nyersanyagforrások és vasútvonalak kerültek más országokhoz.
+                Ez hosszú időre meghatározta Magyarország politikáját és társadalmi életét.
+            </p>
+
+            <div class="image-placeholder">
+                Ide szúrj be egy Trianon térképet
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="osszegzes">
+
+        <div class="card">
+
+            <h2>Összegzés</h2>
+
+            <p>
+                Az első világháború teljesen átalakította Európát.
+                A háború következményei politikai, gazdasági és társadalmi szinten is érezhetőek voltak.
+            </p>
+
+            <p>
+                Magyarország számára különösen súlyos veszteségeket jelentett a háborút lezáró békerendszer.
+                Az események hatása még évtizedekkel később is meghatározó maradt.
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Készítette: Saját történelem projekt • GitHub oldal</p>
+    </footer>
+
+</body>
+</html>
